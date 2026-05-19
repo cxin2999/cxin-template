@@ -8,7 +8,6 @@ spring:
     store-type: redis
     # session 30 天过期
     timeout: 2592000
-  # todo init
   datasource:
     url: jdbc:mysql://localhost:3306/table_name?useSSL=false&serverTimezone=UTC&allowPublicKeyRetrieval=true
     username: root
@@ -34,6 +33,7 @@ springdoc:
   group-configs:
     - group: 'default'
       paths-to-match: '/**'
+      # todo init
       packages-to-scan: com.cxin.cxintemplate.controller
 # knife4j 接口文档配置
 knife4j:
